@@ -1,0 +1,73 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a, ul {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --color-background: #D4F6CC;
+    --color-website-orange: #EF5B0C;
+    --color-website-blue: #003865;
+}
+
+@font-face {
+    font-family: 'josefinsans-regular';
+    src: url('./static/fonts/josefinsans-regular-webfont.woff') format('woff'),
+         url('./static/fonts/josefinsans-regular-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'josefinsans-thin';
+    src: url('./static/fonts/josefinsans-thin-webfont.woff') format('woff'),
+         url('./static/fonts/josefinsans-thin-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'josefinsans-regular', Arial, Helvetica, sans-serif;
+}
+
+.layout-container {
+    display: grid;
+    min-height: 100vh;
+    grid-template: 200px 1fr / 400px 1fr;
+}
+
+/* ------------ Header styles ------------  */
+
+header {
+    grid-area: 1 / 2 / 2 / 3;
+    box-shadow: 1px -3px 15px;
+}
+
+/* ------------ Sidebar styles ------------  */
+
+nav {
+    background-color: var(--color-website-orange);
+    color: #FFF;
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+nav h1 {
+    font-size: 3rem;
+    margin: 30px;
+}
+
+nav ul.nav-list {
+    font-size: 2rem;
+    margin: 75px auto 40px 30px;
+}
+
+nav ul.nav-list li {
+    margin-bottom: 20px;
+}
+
