@@ -13,120 +13,189 @@
 </head>
 <body>
 
-    <div class="layout-container">
+    <header>
 
-        <header>
+        <div class="search">
+            <label for="seach-bar"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="search" name="search-bar" id="search-bar">
+        </div>
 
-            <div class="search">
-                <label for="seach-bar"><i class="fa-solid fa-magnifying-glass"></i></label>
-                <input type="search" name="search-bar" id="search-bar">
-            </div>
+        <div class="notifications">
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+            <a href="#" class="avatar"></a>
+            <h1>Sam Holtby</h1>
+        </div>
 
-            <div class="notifications">
-                <a href="#"><i class="fa-solid fa-bell"></i></a>
-                <div class="avatar"></div>
-                <h1>Sam Holtby</h1>
-            </div>
+        <div class="welcome">
+            <a href="#" class="avatar"></a>
+            <p>Hey there,</p>
+            <h1>Sam Holtby<span>(@Holtbergles)</span></h1>
+        </div>
 
-            <div class="welcome">
-                <div class="avatar"></div>
-                <p>Hey there,</p>
-                <h1>Sam Holtby<span>(@Holtbergles)</span></h1>
-            </div>
+        <div class="header-buttons">
+            <button type="button">New</button>
+            <button type="button">Upload</button>
+            <button type="button">Share</button>
+        </div>
 
-            <div class="header-buttons">
-                <button type="button">New</button>
-                <button type="button">Upload</button>
-                <button type="button">Share</button>
-            </div>
+    </header>
+    
+    <nav>
+        <h1> <i class="fa-solid fa-desktop"></i> Dashboard</h1>
+        <ul class="nav-list">
+            <li><a href="#"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-address-card"></i> Profile</a></li>
+            <li><a href="#"><i class="fa-solid fa-message"></i> Messages</a></li>
+            <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+            <li><a href="#"><i class="fa-solid fa-list-check"></i> Tasks</a></li>
+            <li><a href="#"><i class="fa-solid fa-people-group"></i> Communities</a></li>
+        </ul>
 
-        </header>
-        
-        <nav>
-            <h1> <i class="fa-solid fa-desktop"></i> Dashboard</h1>
-            <ul class="nav-list">
-                <li><a href="#"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-address-card"></i> Profile</a></li>
-                <li><a href="#"><i class="fa-solid fa-message"></i> Messages</a></li>
-                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
-                <li><a href="#"><i class="fa-solid fa-list-check"></i> Tasks</a></li>
-                <li><a href="#"><i class="fa-solid fa-people-group"></i> Communities</a></li>
-            </ul>
+        <ul class="nav-list">
+            <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question"></i> Support</a></li>
+            <li><a href="#"><i class="fa-solid fa-shield-halved"></i> Privacy</a></li>
+        </ul>
 
-            <ul class="nav-list">
-                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
-                <li><a href="#"><i class="fa-solid fa-circle-question"></i> Support</a></li>
-                <li><a href="#"><i class="fa-solid fa-shield-halved"></i> Privacy</a></li>
-            </ul>
+    </nav>
+    
+    <main>
 
-        </nav>
-        
-        <main>
+        <div class="projects-container">
+
             <h1>Your Projects</h1>
+
+            <div class="card">
+                <h5>Super Awesome project</h5>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed mattis purus, quis vestibulum ante.
+                </div>
+                <div class="card-controls">
+                    <a href=""><i class="fa-solid fa-star"></i></a>
+                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-code-fork"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>This one's even better</h5>
+                <div class="content">
+                    Nulla justo est, tempus non nisi in, ullamcorper fringilla urna. Fusce congue quam in cursus pulvinar.
+                </div>
+                <div class="card-controls">
+                    <a href=""><i class="fa-solid fa-star"></i></a>
+                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-code-fork"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>Chillingly cool</h5>
+                <div class="content">
+                    Ut a odio eget turpis elementum interdum ut in velit. Nam eget fringilla quam.
+                </div>
+                <div class="card-controls">
+                    <a href=""><i class="fa-solid fa-star"></i></a>
+                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-code-fork"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>Easy Peasy</h5>
+                <div class="content">
+                    Aenean pharetra mauris viverra, sollicitudin ex vel, gravida sapien. Sed bibendum efficitur ex eu imperdiet.
+                </div>
+                <div class="card-controls">
+                    <a href=""><i class="fa-solid fa-star"></i></a>
+                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-code-fork"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>Lemon Squeezy</h5>
+                <div class="content">
+                    Nulla at enim odio. Praesent nec hendrerit magna.
+                </div>
+                <div class="card-controls">
+                    <a href=""><i class="fa-solid fa-star"></i></a>
+                    <a href=""><i class="fa-solid fa-eye"></i></a>
+                    <a href=""><i class="fa-solid fa-code-fork"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5>Another one, christ!</h5>
+                <div class="content">
+                    Etiam semper nisi ligula, eget feugiat nulla consequat ut.
+                </div>
+                <div class="card-controls">
+                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#"><i class="fa-solid fa-code-fork"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="announcements-container">
+
             <h1>Announcements</h1>
 
-            <div class="projects-container">
+            <div class="card">
 
-                <div class="card">
-                    <h5>Super Awesome project</h5>
+                <div>
+                    <h5>Maintenance</h5>
                     <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed mattis purus, quis vestibulum ante.
-                    </div>
-                    <div class="card-controls">
-                        <a href=""><i class="fa-solid fa-star"></i></a>
-                        <a href=""><i class="fa-solid fa-eye"></i></a>
-                        <a href=""><i class="fa-solid fa-code-fork"></i></a>
+                        Etiam tellus sem, commodo eu fermentum ac, ultrices at neque. Integer id faucibus est.
                     </div>
                 </div>
 
-                <div class="card">
-                    <h5>This one's even better</h5>
+                <div>
+                    <h5>Upgrades coming</h5>
                     <div class="content">
-                        Nulla justo est, tempus non nisi in, ullamcorper fringilla urna. Fusce congue quam in cursus pulvinar.
+                        Etiam tellus sem, commodo eu fermentum ac, ultrices at neque. Integer id faucibus est.
                     </div>
-                    <div class="card-controls"></div>
                 </div>
 
-                <div class="card">
-                    <h5>Chillingly cool</h5>
+                <div>
+                    <h5>Privacy Policy</h5>
                     <div class="content">
-                        Ut a odio eget turpis elementum interdum ut in velit. Nam eget fringilla quam.
+                        Etiam tellus sem, commodo eu fermentum ac, ultrices at neque. Integer id faucibus est.
                     </div>
-                    <div class="card-controls"></div>
                 </div>
 
-                <div class="card">
-                    <h5>Easy Peasy</h5>
-                    <div class="content">
-                        Aenean pharetra mauris viverra, sollicitudin ex vel, gravida sapien. Sed bibendum efficitur ex eu imperdiet.
-                    </div>
-                    <div class="card-controls"></div>
-                </div>
+            </div>
+            <h1>Trending</h1>
 
-                <div class="card">
-                    <h5>Lemon Squeezy</h5>
-                    <div class="content">
-                        Nulla at enim odio. Praesent nec hendrerit magna.
-                    </div>
-                    <div class="card-controls"></div>
-                </div>
+            <div class="card">
 
-                <div class="card">
-                    <h5>Another one, christ!</h5>
-                    <div class="content">
-                        Etiam semper nisi ligula, eget feugiat nulla consequat ut.
-                    </div>
-                    <div class="card-controls"></div>
+                <div class="profile">
+                    <a href="#" class="avatar"><a>
+                    <a href="#" class="handle">@ScottMichael</a>
+                    <p>Head of Research</p>
+                </div>
+                <div class="profile">
+                    <a href="#" class="avatar"></a>
+                    <a href="#" class="handle">@PaulSmeg</a>
+                    <p>Smeg Expert</p>
+                </div>
+                <div class="profile">
+                    <a href="#" class="avatar"></a>
+                    <a href="#" class="handle">@LordZord5000</a>
+                    <p></p>
+                </div>
+                <div class="profile">
+                    <a href="#" class="avatar"></a>
+                    <a href="#" class="handle">@JediMoFo</a>
+                    <p></p>
                 </div>
 
             </div>
 
-            <div class="announcements-container">
-
-            </div>
-        </main>
-
-    </div>
+        </div>
+    </main>
     
 </body>
 </html>
