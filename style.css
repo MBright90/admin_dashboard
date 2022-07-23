@@ -168,3 +168,71 @@ nav ul.nav-list li {
     margin-bottom: 20px;
 }
 
+/* ------------ Main Section ------------ */
+
+main {
+    background-color: #D4F6CC;
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+    padding: 40px 20px;
+    z-index: -1;
+}
+
+main>h1 {
+    margin-bottom: 5px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.2);
+}
+
+.projects-container .card {
+    display: grid;
+    position: relative;
+    grid-template: auto 1fr 30px / 1fr;
+    padding: 20px 40px;
+}
+
+.projects-container .card:after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-website-blue);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+}
+
+.card h5 {
+    align-self: flex-end;
+    font-size: max(10px, 10px + 1vw);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.card .content {
+    font-family: 'josefinsans-thin';
+    font-weight: 600;
+}
+
+.card .card-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+/* 
+.announcements-container {
+    background-color: blue;
+    display: grid;
+    grid-template
+} */
