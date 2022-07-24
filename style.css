@@ -208,11 +208,13 @@ main>h1 {
 body main .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: min-content;
     gap: 20px;
 }
 
 .projects-container h1 {
     grid-area: 1 / 1 / 2 / -1;
+    margin-top: 20px;
     margin-bottom: -10px;
 }
 
@@ -327,6 +329,10 @@ body main .projects-container {
     margin-bottom: -10px;
 }
 
+.announcements-container h1:nth-child(1) {
+    margin-top: 40px;
+}
+
 
 @media screen and (min-width: 1260px) {
 
@@ -391,7 +397,9 @@ body main .projects-container {
         margin-left: 20px;
     }
 
-    .announcements-container h1 {
+    .projects-container h1,
+    .announcements-container h1,
+    .announcements-container h1:nth-child(1) {
         margin-top: 0;
     }
 
